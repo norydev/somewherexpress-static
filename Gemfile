@@ -8,7 +8,7 @@ gem "middleman", "~>3.4.1"
 gem "middleman-livereload", "~> 3.3.0"
 
 gem "jquery-middleman"
-gem "bootstrap-sass", "~> 3.3.1"
+gem "bootstrap-sass", "~> 3.3"
 gem "font-awesome-sass", "~> 4.0"
 
 gem "dotenv"
