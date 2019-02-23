@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title><%= page_title %></title>
@@ -12,16 +11,23 @@
   <%= stylesheet_link_tag "all" %>
 </head>
 <body>
+  <div class="bg-red wrapper error-page">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h1>404</h1>
 
-  <%= yield %>
+          <div class="lead">
+            Ce que vous cherchez n'est pas ici
+          </div>
 
+          <% link_to "/", class: "navbar-wagon-button btn" do %>
+            Accueil
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
   <%= partial 'shared/footer' %>
-
-  <%= javascript_include_tag "//maps.google.com/maps/api/js?libraries=places&key=#{ENV['GMAPS_KEY']}" %>
-  <%= javascript_include_tag "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js" %>
-  <%= javascript_include_tag "//cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" %>
-  <%= javascript_include_tag "all" %>
-
-  <%= yield_content :after_js %>
 </body>
 </html>
