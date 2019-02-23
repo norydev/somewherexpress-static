@@ -1,0 +1,30 @@
+---
+title: Compétitions - Somewherexpress
+description: "Toutes les compétitions de Somewherexpress. Somewherexpress est un collectif d'autostoppeurs basé en Suisse Romande. Nous organisons chaque année des compétitions d'autostop par équipe à travers l'Europe. Rejoins-nous!"
+layout: application
+---
+
+<div class="container padded-mini">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="head-icon text-center"><i class="fa fa-map-signs"></i></div>
+      <h1>Compétitions</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card-deck">
+    <% data.competitions.each do |competition| %>
+      <%= partial "partials/competitions/card", locals: { competition: competition } %>
+    <% end %>
+    <div class="card ghost"></div>
+  </div>
+</div>
+
+<div class="bg-red">
+  <div class="container padded-bottom padded-mini-top">
+    <h2 class="text-center">Compétitions terminées</h2>
+    <%= partial 'partials/competitions/map', locals: { markers: map_all_city_markers, competitions: map_all_competitions } %>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+// Your footer style
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -88px;
+
+  &:after {
+    height: 88px;
+    content: "";
+    display: block;
+  }
+}
+
+footer {
+  padding: 30px;
+  height: 88px;
+
+  .boxed {
+    margin-left: 5px;
+    padding: 5px 8px;
+    border: 2px solid white;
+  }
+}

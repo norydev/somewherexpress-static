@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= page_title %></title>
+  <meta name="description" content="<%= page_description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <%= partial 'shared/meta_tags' %>
+  <%= partial 'shared/favicon' %>
+
+  <%= stylesheet_link_tag "all" %>
+</head>
+<body>
+
+  <%= yield %>
+
+  <%= partial 'shared/footer' %>
+
+  <%= javascript_include_tag "//maps.google.com/maps/api/js?libraries=places&key=#{ENV['GMAPS_KEY']}" %>
+  <%= javascript_include_tag "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js" %>
+  <%= javascript_include_tag "//cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" %>
+  <%= javascript_include_tag "all" %>
+
+  <%= yield_content :after_js %>
+</body>
+</html>

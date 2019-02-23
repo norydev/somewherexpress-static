@@ -1,0 +1,25 @@
+<tr>
+  <td width="1">
+    <%= partial 'partials/users/avatar_small', locals: { user: user } %>
+  </td>
+  <td class="text-uppercase"><%= link_to user.name, "users/#{user.id}" %></td>
+  <td>
+    <% competition_victories(user).each do |competition| %>
+      <% link_to "competitions/#{competition.id}" do %>
+        <span class="trophies"><i class="fa fa-trophy" data-toggle="tooltip" data-placement="bottom" title="<%= competition.name %>"></i></span>
+      <% end %>
+    <% end %>
+  </td>
+  <td>
+    <% track_victories(user).each do |track| %>
+      <% link_to "competitions/#{track.competition_id}#track-#{track.id}-result" do %>
+        <span class="medals"><i class="icomoon icon-medal" data-toggle="tooltip" data-placement="bottom" title="<%= track_name(track) %>"></i></span>
+      <% end %>
+    <% end %>
+  </td>
+  <td width="1">
+    <% if user.committee %>
+      <%= image_tag "badge_committee.svg", class: "award", alt: "", data: { toggle: "tooltip", placement: "bottom"}, title: "Membre Fondateur du Comité Central de Somewherexpress" %>
+    <% end %>
+  </td>
+</tr>

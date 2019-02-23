@@ -1,0 +1,11 @@
+<%- (ranks.reject { |r| r.result == 0 }.sort_by { |r| [r.dsq, r.result] } +
+     ranks.select { |r| r.result == 0 }).each do |rank| -%>
+  <tr>
+    <td class="text-center"><%= result(rank) %></td>
+    <td class="text-center" width="1">
+      <%= partial 'partials/users/avatar_small', locals: { user: user(rank.user_id) } %>
+    </td>
+    <td class="text-uppercase"><%= link_to user(rank.user_id).name, "users/#{rank.user_id}" %></td>
+    <td class="text-right text-uppercase"><%= rank.points %> Points</td>
+  </tr>
+<%- end -%>

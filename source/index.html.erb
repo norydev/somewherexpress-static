@@ -1,0 +1,58 @@
+---
+title: Somewherexpress
+description: Somewherexpress est un collectif d'autostoppeurs basé en Suisse Romande. Nous organisons chaque année des compétitions d'autostop par équipe à travers l'Europe. Rejoins-nous!
+layout: home
+---
+
+<div class="welcome">
+  <div class="bg-welcome">
+    <%= partial 'shared/home_navbar' %>
+    <div class="container padded intro">
+      <div class="row">
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1 text-center">
+          <div class="lead">
+            <%= current_page.data.description %>
+          </div>
+          <div class="users">
+            <% data.users.sort_by(&:id).each do |user| %>
+              <div class="marged-micro-bottom" style="display: inline-block;"><%= partial 'partials/users/avatar_medium', locals: { user: user } %></div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-welcome">
+    <div class="container padded-bottom padded-mini-top">
+      <h2 class="text-center">Compétitions terminées</h2>
+      <%= partial 'partials/competitions/map', locals: { markers: map_all_city_markers, competitions: map_all_competitions } %>
+    </div>
+  </div>
+
+  <div class="bg-welcome">
+    <div class="container padded-bottom padded-mini-top">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h2 class="text-center">Hall of Fame</h2>
+          <div class="panel panel-default">
+          <table class="table">
+            <tbody>
+              <% data.users.first(5).each do |user| %>
+                <%= partial 'partials/users/hall_of_fame_row', locals: { user: user } %>
+              <% end %>
+              <tr>
+                <td colspan="5" class="bg-light-grey">
+                  <% link_to "/users" do %>
+                  <div class="text-center"><i class="fa fa-plus marged-micro-sides"></i> Voir classement complet</div>
+                  <% end %>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

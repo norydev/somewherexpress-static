@@ -1,0 +1,1039 @@
+- id: 13
+  name: "Cologne Express 17"
+  start_date: "16 septembre 2017"
+  end_date: "17 septembre 2017"
+  description: "Justin et Fanny non partant pour raison de santé nous suivent en voiture et arrivent même après la première équipe!\r\n\r\nUne course sans accrocs pour les participants, on ne peut pas en dire tout à fait autant de Fanny qui a un petit peu sali la voiture de Justin 😄"
+  ranks:
+  - user_id: 2
+    result: 0
+    points: 0
+    dsq: false
+  - user_id: 8
+    result: 0
+    points: 0
+    dsq: false
+  - user_id: 9
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 17
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 1
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 11
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 42
+    result: 2
+    points: 0
+    dsq: false
+  start_city_id: 1
+  end_city_id: 115
+  tracks:
+  - id: 52
+    competition_id: 13
+    start_time: 16 septembre 2017
+    start_city_id: 1
+    end_city_id: 115
+    ranks:
+    - user_id: 2
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 8
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 9
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 42
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 11
+      result: 3
+      points: 0
+      dsq: false
+- id: 12
+  name: "Barcelone Express 16"
+  start_date: "17 septembre 2016"
+  end_date: "19 septembre 2016"
+  video: "https://youtube.com/embed/N0mJvCB4LgY"
+  description: "Une course super rapide et un nouveau record de victoire avec la plus petite marge sur la deuxième équipe! Aline et Michael sont les vainqueurs de Barcelone Express'16 avec 7 minutes d'avance sur Mélissa et Simon! Les temps d'arrivées (départ à 8h00):\r\n\r\n1. Aline & Michael: 18h27\r\n2. Mélissa & Simon: 18h34\r\n3. Inès & Fabien: 19h59\r\n4. Fanny & Benoit: 20h37\r\n\r\nBravo à tous!"
+  ranks:
+  - user_id: 39
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 38
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 1
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 40
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 33
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 4
+    points: 0
+    dsq: false
+  - user_id: 8
+    result: 4
+    points: 0
+    dsq: false
+  - user_id: 17
+    result: 2
+    points: 0
+    dsq: false
+  start_city_id: 1
+  end_city_id: 113
+  tracks:
+  - id: 51
+    competition_id: 12
+    start_time: 17 septembre 2016
+    start_city_id: 1
+    end_city_id: 113
+    ranks:
+    - user_id: 39
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 38
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 40
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 33
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 8
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 2
+      points: 0
+      dsq: false
+- id: 7
+  name: "Athènes Express 15"
+  start_date: "03 août 2015"
+  end_date: "16 août 2015"
+  description: "Un voyage de fou sur la route de l'Orient Express (ou à peu près ^^) "
+  ranks:
+  - user_id: 17
+    result: 6
+    points: 5
+    dsq: false
+  - user_id: 12
+    result: 3
+    points: 12
+    dsq: false
+  - user_id: 10
+    result: 5
+    points: 9
+    dsq: false
+  - user_id: 20
+    result: 1
+    points: 18
+    dsq: false
+  - user_id: 21
+    result: 2
+    points: 14
+    dsq: false
+  - user_id: 18
+    result: 3
+    points: 12
+    dsq: false
+  start_city_id: 1
+  end_city_id: 12
+  tracks:
+  - id: 19
+    competition_id: 7
+    start_time: 03 août 2015
+    start_city_id: 1
+    end_city_id: 40
+    ranks:
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 12
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 10
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 18
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 20
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 21
+      result: 0
+      points: 0
+      dsq: false
+  - id: 20
+    competition_id: 7
+    start_time: 05 août 2015
+    start_city_id: 40
+    end_city_id: 42
+    ranks:
+    - user_id: 17
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 12
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 10
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 18
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 21
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 20
+      result: 1
+      points: 5
+      dsq: false
+  - id: 21
+    competition_id: 7
+    start_time: 07 août 2015
+    start_city_id: 42
+    end_city_id: 44
+    ranks:
+    - user_id: 17
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 10
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 12
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 21
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 20
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 18
+      result: 1
+      points: 5
+      dsq: false
+  - id: 22
+    competition_id: 7
+    start_time: 09 août 2015
+    start_city_id: 44
+    end_city_id: 46
+    ranks:
+    - user_id: 17
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 10
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 12
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 18
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 20
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 21
+      result: 1
+      points: 5
+      dsq: false
+  - id: 23
+    competition_id: 7
+    start_time: 12 août 2015
+    start_city_id: 46
+    end_city_id: 12
+    ranks:
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: true
+    - user_id: 10
+      result: 0
+      points: 0
+      dsq: true
+    - user_id: 12
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 20
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 21
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 18
+      result: 2
+      points: 3
+      dsq: false
+- id: 5
+  name: "Oslo Express 14"
+  start_date: "04 août 2014"
+  end_date: "17 août 2014"
+  video: "https://www.youtube.com/embed/L6ytNrt3kc0"
+  ranks:
+  - user_id: 8
+    result: 2
+    points: 10
+    dsq: false
+  - user_id: 1
+    result: 3
+    points: 7
+    dsq: false
+  - user_id: 3
+    result: 1
+    points: 12
+    dsq: false
+  - user_id: 4
+    result: 4
+    points: 6
+    dsq: false
+  - user_id: 11
+    result: 6
+    points: 5
+    dsq: false
+  - user_id: 7
+    result: 7
+    points: 4
+    dsq: false
+  - user_id: 2
+    result: 8
+    points: 2
+    dsq: false
+  - user_id: 17
+    result: 4
+    points: 6
+    dsq: false
+  start_city_id: 1
+  end_city_id: 10
+  tracks:
+  - id: 9
+    competition_id: 5
+    start_time: 04 août 2014
+    start_city_id: 1
+    end_city_id: 30
+    ranks:
+    - user_id: 3
+      result: 1
+      points: 6
+      dsq: false
+    - user_id: 8
+      result: 1
+      points: 6
+      dsq: false
+    - user_id: 4
+      result: 2
+      points: 4
+      dsq: false
+    - user_id: 11
+      result: 2
+      points: 4
+      dsq: false
+    - user_id: 7
+      result: 3
+      points: 2
+      dsq: false
+    - user_id: 1
+      result: 4
+      points: 1
+      dsq: false
+    - user_id: 2
+      result: 4
+      points: 1
+      dsq: false
+    - user_id: 17
+      result: 3
+      points: 2
+      dsq: false
+  - id: 10
+    competition_id: 5
+    start_time: 07 août 2014
+    start_city_id: 30
+    end_city_id: 32
+    ranks:
+    - user_id: 8
+      result: 2
+      points: 4
+      dsq: false
+    - user_id: 4
+      result: 3
+      points: 2
+      dsq: false
+    - user_id: 7
+      result: 3
+      points: 2
+      dsq: false
+    - user_id: 11
+      result: 4
+      points: 1
+      dsq: false
+    - user_id: 3
+      result: 1
+      points: 6
+      dsq: false
+    - user_id: 1
+      result: 1
+      points: 6
+      dsq: false
+    - user_id: 2
+      result: 4
+      points: 1
+      dsq: false
+    - user_id: 17
+      result: 2
+      points: 4
+      dsq: false
+  - id: 11
+    competition_id: 5
+    start_time: 09 août 2014
+    start_city_id: 32
+    end_city_id: 34
+    ranks:
+    - user_id: 11
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 7
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 8
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: false
+  - id: 12
+    competition_id: 5
+    start_time: 12 août 2014
+    start_city_id: 34
+    end_city_id: 36
+    ranks:
+    - user_id: 1
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 7
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 8
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 11
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: false
+  - id: 13
+    competition_id: 5
+    start_time: 15 août 2014
+    start_city_id: 36
+    end_city_id: 10
+    ranks:
+    - user_id: 7
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 8
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 11
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 0
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: false
+- id: 4
+  name: "Amsterdam Express 14"
+  start_date: "23 avril 2014"
+  end_date: "27 avril 2014"
+  video: "https://www.youtube.com/embed/CJZs-dv5yiE"
+  ranks:
+  - user_id: 2
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 10
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 1
+    result: 4
+    points: 0
+    dsq: false
+  - user_id: 14
+    result: 4
+    points: 0
+    dsq: false
+  - user_id: 9
+    result: 5
+    points: 0
+    dsq: false
+  - user_id: 3
+    result: 0
+    points: 0
+    dsq: true
+  - user_id: 7
+    result: 0
+    points: 0
+    dsq: true
+  - user_id: 12
+    result: 0
+    points: 0
+    dsq: true
+  - user_id: 13
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 16
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 15
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 11
+    result: 5
+    points: 0
+    dsq: false
+  - user_id: 17
+    result: 0
+    points: 0
+    dsq: true
+  start_city_id: 1
+  end_city_id: 8
+  tracks:
+  - id: 8
+    competition_id: 4
+    start_time: 23 avril 2014
+    start_city_id: 1
+    end_city_id: 8
+    ranks:
+    - user_id: 2
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 16
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 10
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 15
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 14
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 9
+      result: 5
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 0
+      points: 0
+      dsq: true
+    - user_id: 7
+      result: 0
+      points: 0
+      dsq: true
+    - user_id: 12
+      result: 0
+      points: 0
+      dsq: true
+    - user_id: 13
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 11
+      result: 5
+      points: 0
+      dsq: false
+    - user_id: 17
+      result: 0
+      points: 0
+      dsq: true
+- id: 3
+  name: "Helsinki Express 13"
+  start_date: "05 août 2013"
+  end_date: "18 août 2013"
+  video: "https://www.youtube.com/embed/Or9jo6qJy2Q"
+  ranks:
+  - user_id: 2
+    result: 6
+    points: 11
+    dsq: false
+  - user_id: 9
+    result: 3
+    points: 14
+    dsq: false
+  - user_id: 7
+    result: 4
+    points: 12
+    dsq: false
+  - user_id: 8
+    result: 1
+    points: 15
+    dsq: false
+  - user_id: 10
+    result: 4
+    points: 12
+    dsq: false
+  - user_id: 4
+    result: 7
+    points: 9
+    dsq: false
+  - user_id: 1
+    result: 8
+    points: 6
+    dsq: false
+  - user_id: 3
+    result: 1
+    points: 15
+    dsq: false
+  start_city_id: 1
+  end_city_id: 6
+  tracks:
+  - id: 3
+    competition_id: 3
+    start_time: 05 août 2013
+    start_city_id: 1
+    end_city_id: 18
+    ranks:
+    - user_id: 9
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 10
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 3
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 8
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 2
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 7
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 1
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 4
+      points: 0
+      dsq: false
+  - id: 4
+    competition_id: 3
+    start_time: 08 août 2013
+    start_city_id: 18
+    end_city_id: 20
+    ranks:
+    - user_id: 4
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 7
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 10
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 2
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 8
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 1
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 9
+      result: 3
+      points: 1
+      dsq: false
+  - id: 5
+    competition_id: 3
+    start_time: 09 août 2013
+    start_city_id: 20
+    end_city_id: 22
+    ranks:
+    - user_id: 4
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 10
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 8
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 1
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 7
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 9
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 2
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 3
+      result: 2
+      points: 3
+      dsq: false
+  - id: 6
+    competition_id: 3
+    start_time: 12 août 2013
+    start_city_id: 22
+    end_city_id: 24
+    ranks:
+    - user_id: 8
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 9
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 7
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 10
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 4
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 3
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 2
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 1
+      result: 4
+      points: 0
+      dsq: false
+  - id: 7
+    competition_id: 3
+    start_time: 14 août 2013
+    start_city_id: 24
+    end_city_id: 26
+    ranks:
+    - user_id: 8
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 4
+      result: 4
+      points: 0
+      dsq: false
+    - user_id: 10
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 7
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 3
+      result: 3
+      points: 1
+      dsq: false
+    - user_id: 9
+      result: 1
+      points: 5
+      dsq: false
+    - user_id: 1
+      result: 2
+      points: 3
+      dsq: false
+    - user_id: 2
+      result: 4
+      points: 0
+      dsq: false
+- id: 2
+  name: "Monaco Express 13"
+  start_date: "03 avril 2013"
+  end_date: "07 avril 2013"
+  ranks:
+  - user_id: 3
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 1
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 5
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 6
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 2
+    result: 3
+    points: 0
+    dsq: false
+  start_city_id: 1
+  end_city_id: 4
+  tracks:
+  - id: 2
+    competition_id: 2
+    start_time: 03 avril 2013
+    start_city_id: 1
+    end_city_id: 4
+    ranks:
+    - user_id: 3
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 5
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 6
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 3
+      points: 0
+      dsq: false
+- id: 1
+  name: "Bruxelles Express 12"
+  start_date: "08 juillet 2012"
+  end_date: "12 juillet 2012"
+  ranks:
+  - user_id: 3
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 1
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 2
+    result: 2
+    points: 0
+    dsq: false
+  start_city_id: 1
+  end_city_id: 2
+  tracks:
+  - id: 1
+    competition_id: 1
+    start_time: 08 juillet 2012
+    start_city_id: 1
+    end_city_id: 2
+    ranks:
+    - user_id: 3
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 1
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 2
+      points: 0
+      dsq: false

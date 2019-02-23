@@ -1,0 +1,71 @@
+---
+layout: application
+---
+
+<%# The frontmatter can't be dynamic, thus this hack: %>
+<% content_for(:page_title, "#{competition.name} - Somewherexpress") %>
+<% content_for(:page_description, "#{route(competition)}, Du #{competition.start_date} au #{competition.end_date}. Somewherexpress est un collectif d'autostoppeurs basé en Suisse Romande. Nous organisons chaque année des compétitions d'autostop par équipe à travers l'Europe. Rejoins-nous!") %>
+
+<div class="container padded-mini">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-default bg-image-competition" style="background-image: url(<%= asset_path(:images, "cities/#{city(competition.end_city_id).picture}") %>);">
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h1><%= competition.name %></h1>
+
+      <div class="text-center">
+        <p class="lead"><%= competition_boundaries(competition) %></p>
+        <p class="text-uppercase text-muted small"><%= competition.start_date %> – <%= competition.end_date %>
+        </p>
+
+        <%# this div is refreshed on subscriptions create/update: %>
+        <div id="competition-<%= competition.id %>-dynamic">
+          <% participants(competition).each do |user| %>
+            <%= partial 'partials/users/avatar_medium', locals: { user: user, tooltip: true } %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container padded-mini">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="view">
+          <div class="panel panel-default">
+            <div id="map" style="width: 100%; height: 400px; max-height: 90vh;"></div>
+
+            <% if competition.video %>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="<%= competition.video %>"></iframe>
+              </div>
+            <% end %>
+
+            <% if competition.description %>
+              <blockquote class="marged-medium"><%= simple_format(competition.description) %></blockquote>
+            <% end %>
+          </div>
+          <% if competition.tracks.size > 1 %>
+            <%= partial 'partials/competitions/multi_track', locals: { competition: competition } %>
+          <% else %>
+            <%= partial 'partials/competitions/mono_track', locals: { competition: competition } %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for(:after_js) do %>
+  <script>
+    //<![CDATA[
+    $(document).on('ready', function() {
+      mapWithDirections(<%= map_competition(competition).to_json %>, <%= map_competition_markers(competition).to_json %>);
+    });
+    //]]>
+  </script>
+<% end %>

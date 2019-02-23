@@ -1,0 +1,154 @@
+- id: 1
+  locality: Yverdon-les-Bains
+  name: "Yverdon-les-Bains, Suisse"
+  country_short: "CH"
+  lat: 46.7784736
+  lng: 6.641183
+  picture: yverdon.jpg
+- id: 2
+  locality: Bruxelles
+  name: "Bruxelles, Belgique"
+  country_short: "BE"
+  lat: 50.8503396
+  lng: 4.3517103
+  picture: bruxelles.jpg
+- id: 4
+  locality: Monaco
+  name: "Monaco-Ville, Monaco"
+  country_short: "MC"
+  lat: 43.737411
+  lng: 7.420816
+  picture: monaco.jpg
+- id: 6
+  locality: Helsinki
+  name: "Helsinki, Finlande"
+  country_short: "FI"
+  lat: 60.1733244
+  lng: 24.9410248
+  picture: helsinki.jpg
+- id: 8
+  locality: Amsterdam
+  country_short: "NL"
+  name: "Amsterdam, Pays-Bas"
+  lat: 52.3702157
+  lng: 4.8951679
+  picture: amsterdam.jpg
+- id: 10
+  locality: Oslo
+  name: "Oslo, Norvège"
+  country_short: "NO"
+  lat: 59.9138688
+  lng: 10.7522454
+  picture: oslo.jpg
+- id: 12
+  locality: Athènes
+  name: "Athènes, Kentrikos Tomeas Athinon, Grèce"
+  country_short: "GR"
+  lat: 37.983917
+  lng: 23.7293599
+  picture: athene.jpg
+- id: 18
+  locality: Bratislava
+  name: "Bratislava, Slovaquie"
+  country_short: "SK"
+  lat: 48.1458923
+  lng: 17.1071373
+  picture: bratislava.jpg
+- id: 20
+  locality: Cracovie
+  name: "Cracovie, Pologne"
+  country_short: "PL"
+  lat: 50.0646501
+  lng: 19.9449799
+  picture: cracovie.jpg
+- id: 22
+  locality: Vilnius
+  name: "Vilnius, Apskritis de Vilnius, Lituanie"
+  country_short: "LT"
+  lat: 54.6871555
+  lng: 25.2796514
+  picture: vilnius.jpg
+- id: 24
+  locality: Riga
+  name: "Riga, Rīgas pilsēta, Lettonie"
+  country_short: "LV"
+  lat: 56.9496487
+  lng: 24.1051864
+  picture: riga.jpg
+- id: 26
+  locality: Tallinn
+  name: "Tallinn, Tallinna linn, Estonie"
+  country_short: "EE"
+  lat: 59.4369608
+  lng: 24.7535746
+  picture: tallinn.jpg
+- id: 30
+  locality: Prague
+  name: "Prague, République tchèque"
+  country_short: "CZ"
+  lat: 50.0755381
+  lng: 14.4378005
+  picture: prague.jpg
+- id: 32
+  locality: Berlin
+  name: "Berlin, Allemagne"
+  country_short: "DE"
+  lat: 52.5200066
+  lng: 13.404954
+  picture: berlin.jpg
+- id: 34
+  locality: Copenhague
+  name: "Copenhague, Danemark"
+  country_short: "DK"
+  lat: 55.6760968
+  lng: 12.5683371
+  picture: copenhague.jpg
+- id: 36
+  locality: Stockholm
+  name: "Stockholm, Suède"
+  country_short: "SE"
+  lat: 59.3293235
+  lng: 18.0685808
+  picture: stockholm.jpg
+- id: 40
+  locality: Ljubljana
+  name: "Ljubljana, Slovénie"
+  country_short: "SI"
+  lat: 46.0569465
+  lng: 14.5057515
+  picture: ljubljana.jpg
+- id: 42
+  locality: Belgrade
+  name: "Belgrade, Voïvodine"
+  country_short: "RS"
+  lat: 44.786568
+  lng: 20.4489216
+  picture: belgrade.jpg
+- id: 44
+  locality: Guča
+  name: "Guča"
+  country_short: "RS"
+  lat: 43.7644141
+  lng: 20.2472987
+  picture: guca.jpg
+- id: 46
+  locality: Skopje
+  name: "Skopje, Macédoine"
+  country_short: "MK"
+  lat: 41.9973462
+  lng: 21.4279956
+  picture: skopje.jpg
+- id: 113
+  locality: Barcelone
+  name: "Barcelone, Espagne"
+  country_short: "ES"
+  lat: 41.3850639
+  lng: 2.1734035
+  picture: barcelone.jpg
+- id: 115
+  locality: Cologne
+  name: "Cologne, Allemagne"
+  country_short: "DE"
+  lat: 50.937531
+  lng: 6.9602786
+  picture: cologne.jpg

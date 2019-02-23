@@ -1,0 +1,69 @@
+---
+layout: application
+---
+
+<%# The frontmatter can't be dynamic, thus this hack: %>
+<% content_for(:page_title, "#{user.name} - Somewherexpress") %>
+<% content_for(:page_description, "Profil de #{user.name}. Somewherexpress est un collectif d'autostoppeurs basé en Suisse Romande. Nous organisons chaque année des compétitions d'autostop par équipe à travers l'Europe. Rejoins-nous!") %>
+
+<div class="container padded-mini">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <div class="panel panel-default radius-5">
+        <div class="cover-image-mini">
+        </div>
+        <div class="padded-mini-bottom">
+          <div class="profile-pic">
+            <%= image_tag "avatars/#{user.avatar}", class: "avatar-large", alt: user.name[0] %>
+            <% if user.committee %>
+              <%= image_tag "badge_committee.svg", class: "avatar-badge", alt: "", data: { toggle: "tooltip", placement: "bottom"}, title: "Membre Fondateur du Comité Central de Somewherexpress", style: "margin-top: 3px;" %>
+            <% end %>
+          </div>
+
+          <h1><%= user.name %></h1>
+          <div class="text-center">
+            <% competition_victories(user).each do |competition| %>
+              <% link_to "/competitions/#{competition.id}" do %>
+                <span class="trophies"><i class="fa fa-trophy" data-toggle="tooltip" data-placement="bottom" title="<%= competition.name %>"></i></span>
+              <% end %>
+            <% end %>
+          </div>
+          <div class="text-center">
+            <% track_victories(user).each do |track| %>
+              <% link_to "/competitions/#{track.competition_id}#track-#{track.id}-result" do %>
+                <span class="medals"><i class="icomoon icon-medal" data-toggle="tooltip" data-placement="bottom" title="<%= track_name(track) %>"></i></span>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+
+        <table class="table bordered">
+          <tbody>
+            <% data.competitions.select { |c| c.ranks.find { |r| r.user_id == user.id }.present? }.each do |competition| %>
+              <tr>
+                <td><%= link_to competition.name, "/competitions/#{competition.id}" %></td>
+                <td><%= competition.start_date %> – <%= competition.end_date %></td>
+                <td><%= place(competition.ranks.find { |r| r.user_id == user.id }) %></td>
+                <td>
+                  <% if competition.ranks.find { |r| r.user_id == user.id && r.result == 1 }.present? %>
+                    <span class="trophies-small"><i class="fa fa-trophy"></i></span>
+                  <% end %>
+                </td>
+                <td>
+                  <% competition.tracks.each do |track| %>
+                    <% if track.ranks.find { |r| r.user_id == user.id && r.result == 1 }.present? %>
+                      <% link_to "/competitions/#{track.competition_id}#track-#{track.id}-result" do %>
+                        <span class="medals"><i class="icomoon icon-medal" data-toggle="tooltip" data-placement="bottom" title="<%= track_name(track) %>"></i></span>
+                      <% end %>
+                    <% end %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>

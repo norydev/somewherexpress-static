@@ -1,0 +1,7 @@
+<!-- Open Graph data -->
+<meta property="og:title" content="<%= current_page.data.title || yield_content(:page_title) || 'Somewherexpress' %>" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="<%= request.original_url %>" />
+<meta property="og:image" content="<%= asset_path(:images, 'og_image.jpg') %>" />
+<meta property="og:description" content="<%= page_description %>" />
+<meta property="og:site_name" content="Somewherexpress" />

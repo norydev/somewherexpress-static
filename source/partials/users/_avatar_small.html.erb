@@ -1,0 +1,6 @@
+<% link_to "/users/#{user.id}" do %>
+  <%= image_tag "avatars/#{user.avatar}",
+                class: "avatar",
+                title: ("#{ user.name }" if defined?(tooltip) && tooltip),
+                data: ({ toggle: "tooltip", placement: "bottom" } if defined?(tooltip) && tooltip) %>
+<% end %>

@@ -1,0 +1,28 @@
+<div id="track-<%= competition.tracks.first.id %>-result" class="panel panel-default">
+  <div class="panel-heading">
+    <strong>Résultat final</strong>
+  </div>
+
+  <table class="table">
+    <tbody>
+      <% (competition.ranks.reject { |r| r.result == 0 }.sort_by { |r| [r.dsq, r.result] } + competition.ranks.select { |r| r.result == 0 }).each_slice(2).to_a.each do |rank1, rank2| %>
+        <tr>
+          <td width="1">
+            <%= partial 'partials/users/avatar_small', locals: { user: user(rank1.user_id) } %>
+          </td>
+          <td class="text-uppercase"><%= link_to user(rank1.user_id).name, "/users/#{rank1.user_id}" %></td>
+          <td class="text-center"><%= result(rank1) %></td>
+          <% if rank2 %>
+            <td class="text-right text-uppercase"><%= link_to user(rank2.user_id).name, "/users/#{rank2.user_id}" %></td>
+            <td class="text-right" width="1">
+              <%= partial 'partials/users/avatar_small', locals: { user: user(rank2.user_id) } %>
+            </td>
+          <% else %>
+            <td></td>
+            <td></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

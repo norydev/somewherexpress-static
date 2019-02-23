@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-image">
+    <div class="bg-image-competition" style="background-image: url(<%= asset_path(:images, "cities/#{city(competition.end_city_id).picture}") %>);">
+    </div>
+  </div>
+  <div id="panel-<%= competition.id %>" class="card-body">
+    <div class="ribbon-wrapper"><div class='ribbon-gray'>Terminée</div></div>
+    <div class="list-body">
+      <div class="left-of-ribbon">
+        <h4><%= link_to competition.name, "/competitions/#{competition.id}" %></h4>
+        <p class="text-uppercase small"><%= route(competition) %></p>
+        <p class="text-uppercase text-muted small"><%= competition.start_date %> – <%= competition.end_date %></p>
+      </div>
+
+      <div id="competition-<%= competition.id %>-dynamic">
+        <p class="users-area text-center">
+          <% participants(competition).each do |user| %>
+            <%= partial 'partials/users/avatar_small', locals: { user: user, tooltip: true } %>
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

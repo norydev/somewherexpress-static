@@ -1,0 +1,63 @@
+<div id="competition-<%= competition.id %>-result" class="panel panel-default">
+  <div class="panel-heading with-tabs">
+    <p><strong>Résultats de la compétition</strong></p>
+
+    <ul class="nav nav-tabs" style="margin-bottom: -1px;" role="tablist">
+      <li role="presentation" class="active"><a href="#finals" aria-controls="finals" role="tab" data-toggle="tab">Résultat final</a></li>
+
+      <% competition.tracks.each_with_index do |track, i| %>
+        <li role="presentation"><a href="#track-<%= track.id %>-result" aria-controls="track-<%= track.id %>-result" role="tab" data-toggle="tab">Étape <%= i + 1 %></a></li>
+      <% end %>
+    </ul>
+  </div>
+
+
+  <div class="tab-content result-tables">
+    <div role="tabpanel" class="tab-pane active" id="finals">
+      <div class="padded-mini-sides">
+        <table class="table text-muted race-infos">
+          <tbody>
+            <tr>
+              <td><i class="fa fa-map-signs fa-fw"></i> <%= route(competition) %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table class="table">
+        <tbody>
+          <%= partial 'partials/competitions/final_ranks', locals: { ranks: competition.ranks } %>
+        </tbody>
+      </table>
+    </div>
+
+    <% competition.tracks.each_with_index do |track, i| %>
+      <div role="tabpanel" class="tab-pane" id="track-<%= track.id %>-result">
+        <div class="padded-mini-sides">
+          <table class="table text-muted race-infos">
+            <tbody>
+              <tr>
+                <td><i class="fa fa-map-signs fa-fw"></i> <%= track_name(track) %></td>
+                <td><i class="fa fa-calendar fa-fw"></i> <%= track.start_time %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <table class="table">
+          <tbody>
+            <% (track.ranks.reject { |r| r.result == 0 }.sort_by { |r| [r.dsq, r.result] } + track.ranks.select { |r| r.result == 0 }).each do |rank| %>
+              <tr>
+                <td class="text-center"><%= track_result(rank) %></td>
+                <td class="text-center" width="1">
+                  <%= partial 'partials/users/avatar_small', locals: { user: user(rank.user_id) } %>
+                </td>
+                <td class="text-uppercase"><%= link_to user(rank.user_id).name, "/users/#{rank.user_id}" %></td>
+                <td class="text-right text-uppercase"><%= rank.points %> Points</td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+  </div>
+</div>
