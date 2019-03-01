@@ -18,7 +18,7 @@
     <% competition = competition(track.competition_id) %>
     <% winners = track.ranks.select { |rank| rank.result == 1 }.map { |rank| user(rank.user_id) } %>
 
-    <%= link_to competition.name, "competitions/#{competition.id}"%>
+    <%= link_to competition.name, "/competitions/#{competition.id}"%>
     <% if winners.any? %>
       <div>
         <span class="medals-small"><i class="icomoon icon-medal"></i></span> <%= winners.map { |user| user.name }.join(' & ') %>

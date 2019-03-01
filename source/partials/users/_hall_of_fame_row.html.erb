@@ -2,7 +2,7 @@
   <td width="1">
     <%= partial 'partials/users/avatar_small', locals: { user: user } %>
   </td>
-  <td class="text-uppercase"><%= link_to user.name, "users/#{user.id}" %></td>
+  <td class="text-uppercase"><%= link_to user.name, "/users/#{user.id}" %></td>
   <td>
     <% competition_victories(user).each do |competition| %>
       <% link_to "/competitions/#{competition.id}" do %>

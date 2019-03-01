@@ -5,7 +5,7 @@
     <td class="text-center" width="1">
       <%= partial 'partials/users/avatar_small', locals: { user: user(rank.user_id) } %>
     </td>
-    <td class="text-uppercase"><%= link_to user(rank.user_id).name, "users/#{rank.user_id}" %></td>
+    <td class="text-uppercase"><%= link_to user(rank.user_id).name, "/users/#{rank.user_id}" %></td>
     <td class="text-right text-uppercase"><%= rank.points %> Points</td>
   </tr>
 <%- end -%>
