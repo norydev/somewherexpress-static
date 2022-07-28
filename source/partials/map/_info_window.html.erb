@@ -14,17 +14,18 @@
     <% helsinki_express = data.competitions.find { |c| c.id == 3 } %>
     <%= link_to helsinki_express.name, "/competitions/#{helsinki_express.id}" %>
   <% else %>
-    <% track = data.competitions.flat_map { |competition| competition.tracks.find { |track| track.end_city_id == city.id } }.compact.first %>
-    <% competition = competition(track.competition_id) %>
-    <% winners = track.ranks.select { |rank| rank.result == 1 }.map { |rank| user(rank.user_id) } %>
+    <% data.competitions.select { |competition| competition.status != 'Ouverte' }.flat_map { |competition| competition.tracks.select { |track| track.end_city_id == city.id } }.compact.each do |track| %>
+      <% competition = competition(track.competition_id) %>
+      <% winners = track.ranks.select { |rank| rank.result == 1 }.map { |rank| user(rank.user_id) } %>
 
-    <%= link_to competition.name, "/competitions/#{competition.id}"%>
-    <% if winners.any? %>
-      <div>
-        <span class="medals-small"><i class="icomoon icon-medal"></i></span> <%= winners.map { |user| user.name }.join(' & ') %>
-      </div>
-    <% else %>
-      <div>HORS COMPÉTITION</div>
+      <%= link_to competition.name, "/competitions/#{competition.id}"%>
+      <% if winners.any? %>
+        <div>
+          <span class="medals-small"><i class="icomoon icon-medal"></i></span> <%= winners.map { |user| user.name }.join(' & ') %>
+        </div>
+      <% else %>
+        <div>HORS COMPÉTITION</div>
+      <% end %>
     <% end %>
   <% end %>
 </div>

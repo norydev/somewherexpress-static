@@ -98,3 +98,11 @@
   name: Rachel
   committee: false
   avatar: rachel.jpg
+- id: 43
+  name: Sébastien
+  committee: false
+  avatar: seb.jpg
+- id: 44
+  name: Jonne
+  committee: false
+  avatar: jonne.jpg

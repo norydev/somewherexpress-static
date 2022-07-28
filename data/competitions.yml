@@ -1,3 +1,66 @@
+- id: 14
+  name: "Bruxelles Express 22"
+  start_date: "23 juillet 2022"
+  end_date: "23 juillet 2022"
+  description: "10 ans déjà que nous arpentons les routes d'Europe en autostop. Pour commémorer, nous repartons sur la route des origines avec cette course Yverdon-Bruxelles. Arrivée au Manneken-pis comme en 2012. Pour l'histoire, Fabien & Joëlle gagnent en arrivant à 18h40. Ils ont seulement 22 minutes d'avance sur Benoît et Sébastien. Et Justin & Jonne arrivent seulement 1 minute plus tard que Ben & Séb."
+  start_city_id: 1
+  end_city_id: 2
+  ranks:
+  - user_id: 1
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 11
+    result: 1
+    points: 0
+    dsq: false
+  - user_id: 4
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 43
+    result: 2
+    points: 0
+    dsq: false
+  - user_id: 2
+    result: 3
+    points: 0
+    dsq: false
+  - user_id: 44
+    result: 3
+    points: 0
+    dsq: false
+  tracks:
+  - id: 53
+    competition_id: 14
+    start_time: 23 juillet 2022
+    start_city_id: 1
+    end_city_id: 2
+    ranks:
+    - user_id: 1
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 11
+      result: 1
+      points: 0
+      dsq: false
+    - user_id: 4
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 43
+      result: 2
+      points: 0
+      dsq: false
+    - user_id: 2
+      result: 3
+      points: 0
+      dsq: false
+    - user_id: 44
+      result: 3
+      points: 0
+      dsq: false
 - id: 13
   name: "Cologne Express 17"
   start_date: "16 septembre 2017"
