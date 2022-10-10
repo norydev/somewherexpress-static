@@ -22,6 +22,10 @@
   name: Fanny
   committee: false
   avatar: fanny.jpg
+- id: 11
+  name: Joëlle
+  committee: false
+  avatar: joelle.jpg
 - id: 13
   name: Mark
   committee: false
@@ -66,10 +70,6 @@
   name: Philippe
   committee: false
   avatar: phiphi.jpg
-- id: 11
-  name: Joëlle
-  committee: false
-  avatar: joelle.jpg
 - id: 14
   name: Dan
   committee: false
