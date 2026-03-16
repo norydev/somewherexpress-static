@@ -53,7 +53,9 @@ end
 #     "Helping"
 #   end
 # end
-activate :directory_indexes
+
+# Use the /folder/index.html structure instead of /folder.html
+# activate :directory_indexes
 
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"

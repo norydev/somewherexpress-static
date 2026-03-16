@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+# This script requires s3cmd installed with write access to the bucket
+
+# Delete all .DS_Store in this folder
+Dir.glob('**/*/.DS_store').each { |file| File.delete(file) }
+
+BUCKET = "s3://www.somewherexpress.com"
+BUILD_DIR = "build"
+
+# brutally delete all files in bucket
+system "s3cmd del #{BUCKET} --host-bucket=cellar-c2.services.clever-cloud.com --recursive --force"
+
+# put every file one by one with acl public
+Dir.glob('**/*', base: BUILD_DIR) do |path|
+  next if !File.file?("#{Dir.pwd}/#{BUILD_DIR}/#{path}")
+
+  adjusted_path = ["index.html", "error.html"].include?(path) ? path : path.gsub(/\.html\z/, "")
+
+  cmd = "s3cmd put ./#{BUILD_DIR}/#{path} #{BUCKET}/#{adjusted_path} --acl-public --host-bucket=cellar-c2.services.clever-cloud.com --no-mime-magic --guess-mime-type"
+
+  system cmd
+end
